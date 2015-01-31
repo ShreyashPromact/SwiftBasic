@@ -1,0 +1,100 @@
+
+// Working with variables within Swift
+
+println()
+println("The Basics of Swift")
+println()
+println(" =======================================")
+println("          Working with variable         ")
+println(" =======================================")
+
+// defining constant
+let firstConstant = 10
+let secondConstant: Int = 20
+//condConstant = 20
+
+// defining variables first way
+var firstString = "Shreyash" // autometic declare as string type
+
+// defining variables another way
+var str: String
+str = "Hello"
+
+var inte: Int
+inte = 200
+
+// below line will cause the compiletime error because of constance changed
+//maximumNumberOfLoginAttempts = 12
+
+// different types of integers notation
+let decimalInteger = 17
+let binaryInteger = 0b10001       // 17 in binary notation
+let octalInteger = 0o21           // 17 in octal notation
+let hexadecimalInteger = 0x11     // 17 in hexadecimal notation
+
+// displaying variables declared as different way
+println("Constant Value: \(firstConstant)")
+println("String variable: \(firstString)")
+println("Another String Variable: \(str)")
+println("decimalInteger:(17) \(decimalInteger)")
+println("binaryInteger:(0b10001) \(binaryInteger)")
+println("octalInteger:(0o21) \(octalInteger)")
+println("hexadecimalInteger:(0x11) \(hexadecimalInteger)")
+
+println(" =======================================")
+println(" =======================================")
+println("        Working with if Condition       ")
+println(" =======================================")
+
+var bool = true
+if bool{ // check the syntax for the condition
+    println(" If condition is true...")
+}else{
+    println(" If condition is false...")
+}
+
+// another examples of the condition
+var x = 1
+if x==1{
+    println(" X is equal to 1")
+}else{
+    println(" X is not equal to 1")
+}
+println(" =======================================")
+println("          Working with Toples           ")
+println(" =======================================")
+
+var friends = ("Vivek","Dhruvil","Devang") // toples of friends
+var (a,b,c) = friends
+
+// first way to access with toples
+println("First Friend is:\(a), Second is: \(b) and Third is: \(c)" )
+
+// second way to access with toples
+println("friends.0 is:\(friends.0), friends.1 is: \(friends.1) and friends.2 is: \(friends.2)" )
+
+// trird way of defining toples
+let http200Status = (statusCode: 200, description: "OK")
+println("The status code is \(http200Status.statusCode)")
+// prints "The status code is 200"
+println("The status message is \(http200Status.description)")
+// prints "The status message is OK"
+
+// use of the nil with if condition
+var vivek: Int?
+if vivek != nil {
+    println("vivek is not nil")
+}else{
+    println("vivek is nil")
+}
+
+// Use of assertion
+let age = -3
+assert(age >= 0, "A person's age cannot be less than zero")
+
+println(" =======================================")
+
+
+
+
+
